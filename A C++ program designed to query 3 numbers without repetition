@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	 int i, j, k, l, swap=0;
+	 int x[3];
+
+          for (int i=1; i<=3; ++i)
+    {
+		       
+		  cout << "\t\n Enter a number: ", i;
+		  cin >> x[i-1];
+    }
+    
+    i=1;
+    j=1;
+
+    for (int i = 1; i < 4; i++)
+    {
+    	cout << x[0];
+        cout << x[1];
+    	cout << x[2] << endl;
+    	
+    	swap=0;
+        for (int j = 1; j < 2; j++)
+        {
+        	swap = swap+x[1];
+        	x[1] = x[2];
+        	x[2] = swap;
+        cout << x[0];
+        cout << x[1];
+    	cout << x[2] << endl;
+        
+        }
+        swap=0;
+         swap= swap+x[0];
+         x[0]=x[2];
+         x[2]=swap;
+    }
+    
+    return 0;
+}
